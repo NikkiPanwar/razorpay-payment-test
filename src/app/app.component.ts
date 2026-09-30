@@ -15,11 +15,12 @@ export class AppComponent {
   // Test Key: Replace with your actual key from https://dashboard.razorpay.com/app/keys
   razorpayKey: string = 'rzp_test_1DP5mmOlF5G5ag';
   amount: number = 100; // in INR
+  //this is razor pya testting 
 
   paymentId: string = '';
   status: string = '';
 
-  constructor(private ngZone: NgZone) {}
+  constructor(private ngZone: NgZone) { }
 
   payNow(): void {
     if (typeof Razorpay === 'undefined') {
